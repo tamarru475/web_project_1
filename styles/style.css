@@ -1,4 +1,13 @@
-/* Add your class here */
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "Helvetica Neue";
+  fallback: Arial;
+  fallback: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
 
 .header {
   height: 100vh;
@@ -12,14 +21,23 @@
 }
 
 .nav {
-  /* Add flex properties here */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .logo {
+  max-width: 196px;
+  height: 60px;
 }
 
 .nav-links {
   margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
 }
 
 .nav__link {
@@ -28,24 +46,35 @@
   font-weight: bold;
 }
 
-/* Add the hover state styles for .nav__link here */
+.nav__link:hover {
+  color: #1f69c9;
+}
 
 .header__title {
   font-size: 66px;
   font-weight: 500;
   line-height: 76px;
-  margin: 150px 0 0;
+  position: absolute;
+  padding-left: 15px;
+  margin-top: 150px;
+  max-width: 544px;
 }
 
 .header__description {
   font-size: 20px;
   line-height: 30px;
-  margin: 32px 0 0;
+  position: absolute;
+  padding-left: 15px;
+  margin-top: 320px;
+  max-width: 465px;
 }
 
 .header__image {
-  /* Write styles here */
   z-index: 1;
+  max-width: 636px;
+  position: absolute;
+  top: 135px;
+  right: 20px;
 }
 
 .header__footer {
@@ -65,7 +94,9 @@
   text-decoration: none;
 }
 
-/* Add the hover state styles for .header__link here */
+.header__link:hover {
+  color: #1f69c9;
+}
 
 .header__address {
   color: #838383;
@@ -92,9 +123,20 @@
   margin: 24px 0 0;
 }
 
-/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
+.staff__picks {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-top: 68px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  column-gap: 40px;
+  row-gap: 40px;
+}
 
 .card {
+  max-width: 360px;
+  height: 420px;
   background-color: #fff;
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
@@ -155,17 +197,27 @@
 }
 
 .events__info-section {
+  display: block;
   margin-top: 32px;
 }
 
 .event-info__item {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 4px;
   font-weight: 500;
+  max-width: 24px;
+  height: 24px;
+  margin-right: 12px;
 }
 
 .event-info__icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 12px;
@@ -184,6 +236,8 @@
   font-weight: 500;
   line-height: 30px;
   margin: 0;
+  position: absolute;
+  left: 120px;
 }
 
 .events__description {
@@ -196,67 +250,74 @@
   text-decoration: none;
 }
 
-/* Add the hover state styles for .events__more here */
+.events__more:hover {
+  color: #1f69c9;
+}
 
 .events__cover {
-  /* flex-grow: 1;
+  flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 780px;
-  position: relative; */
+  position: relative;
 }
 
 .events__image {
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 .person {
-  /* position: absolute;
+  position: absolute;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 10px; */
+  gap: 10px;
 }
 
 .person_name_feynman {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  top: -30px;
+  left: 319px;
 }
 
 .person_name_burbidge {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  top: 96px;
+  right: 125px;
 }
 
 .person_name_cannon {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  bottom: 18px;
+  right: 216px;
 }
 
 .person_name_mitchell {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  bottom: 82px;
+  left: 142px;
 }
 
 .person_name_tarter {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  top: 79px;
+  left: 159px;
 }
 
 .person__image {
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 .person__image_size_l {
-  /* width: 140px; */
+  width: 140px;
 }
 
 .person__image_size_m {
-  /* width: 100px; */
+  width: 100px;
 }
 
 .person__image_size_s {
-  /* width: 80px; */
+  width: 80px;
 }
 
 .person__caption {
-  /* text-align: center;
+  text-align: center;
   font-size: 14px;
-  margin: 0; */
+  margin: 0;
 }
 
 .membership {
@@ -278,11 +339,21 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  /* Add styles */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  row-gap: 40px;
 }
 
 .step {
-  /* Add styles */
+  text-align: start;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: flex-start;
+  flex-basis: 220px;
 }
 
 .step__title {
@@ -308,12 +379,18 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  z-index: -2;
 }
 
 .about__title {
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
+  max-width: 154px;
+  text-align: start;
 }
 
 .about__content {
@@ -321,9 +398,18 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  text-align: start;
+  display: block;
+  padding-left: 120px;
+  z-index: 2;
 }
 
 .about__paragraph {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap: 32px;
+  z-index: 2;
 }
 
 .about__circle {
@@ -331,35 +417,64 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  top: -121px;
+  left: -91px;
+  z-index: -1;
 }
 
 .footer {
   box-sizing: border-box;
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 57px;
+  padding-left: 80px;
+  padding-right: 102px;
+  padding-bottom: 60px;
 }
 
 .footer__columns {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer__column_hours {
+  margin-left: auto;
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-end;
+  padding-right: 100px;
 }
 
 .footer__column_social {
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
 }
 
 .footer__logo {
+  max-width: 153px;
 }
 
 .footer__list {
-  /* The code below removes the default browser styles for lists */
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .footer__list-item {
+  padding-top: 25px;
+  padding-bottom: 0px;
 }
 
 .footer__column-heading {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
 }
 
 .footer__column-link {
@@ -369,8 +484,15 @@
   text-decoration: none;
 }
 
+.footer__column-link:hover {
+  color: #c1c1c1;
+}
+
 .footer__social-icon {
 }
 
 .footer__copyrights {
+  display: block;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
 }
