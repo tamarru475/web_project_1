@@ -1,3 +1,4 @@
+@import url(normalize.css);
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -5,9 +6,11 @@
   font-family: "helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
+  overflow-x: hidden;
 }
 
 .header {
+  margin: 0;
   height: 100vh;
   min-height: 720px;
   max-height: 800px;
@@ -52,19 +55,19 @@
   font-size: 66px;
   font-weight: 500;
   line-height: 76px;
-  position: absolute;
-  padding-left: 15px;
-  margin-top: 150px;
+  position: relative;
+  top: 50px;
   max-width: 544px;
+  z-index: 2;
 }
 
 .header__description {
   font-size: 20px;
   line-height: 30px;
-  position: absolute;
-  padding-left: 15px;
-  margin-top: 320px;
+  position: relative;
+  top: 30px;
   max-width: 465px;
+  z-index: 2;
 }
 
 .header__image {
@@ -73,6 +76,7 @@
   position: absolute;
   top: 135px;
   right: 20px;
+  z-index: 1;
 }
 
 .header__footer {
@@ -170,10 +174,13 @@
 }
 
 .events {
+  margin: 0px;
   padding: 100px 0 120px 80px;
   display: flex;
   align-items: start;
   box-sizing: border-box;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .events__content {
@@ -192,11 +199,14 @@
   font-weight: 500;
   line-height: 52px;
   margin: 32px 0;
+  position: relative;
+  z-index: 2;
 }
 
 .events__info-section {
   display: block;
   margin-top: 32px;
+  z-index: 2;
 }
 
 .event-info__item {
@@ -236,6 +246,7 @@
   margin: 0;
   position: absolute;
   left: 120px;
+  z-index: 2;
 }
 
 .events__description {
@@ -261,6 +272,7 @@
 
 .events__image {
   max-width: 100%;
+  z-index: 1;
 }
 
 .person {
@@ -371,6 +383,7 @@
 }
 
 .about {
+  margin: 0;
   padding: 100px 80px;
   background-color: #1f1f1f;
   color: #fff;
@@ -422,8 +435,9 @@
 }
 
 .footer {
+  margin: 0;
   box-sizing: border-box;
-  background-color: #000000;
+  background-color: #1f1f1f;
   color: #ffffff;
   padding-top: 57px;
   padding-left: 80px;
