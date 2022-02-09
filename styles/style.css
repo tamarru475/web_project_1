@@ -6,7 +6,6 @@
   font-family: "helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
-  overflow-x: hidden;
 }
 
 .header {
@@ -28,11 +27,6 @@
   align-items: flex-start;
 }
 
-.logo {
-  max-width: 196px;
-  height: 60px;
-}
-
 .nav-links {
   margin-top: 8px;
   display: flex;
@@ -47,25 +41,31 @@
   font-weight: bold;
 }
 
+.logo {
+  max-width: 196px;
+  height: 60px;
+}
+
 .nav__link:hover {
   color: #1f69c9;
 }
 
 .header__title {
+  margin: 0;
   font-size: 66px;
   font-weight: 500;
   line-height: 76px;
   position: relative;
-  top: 50px;
+  margin-top: 130px;
   max-width: 544px;
   z-index: 2;
 }
 
 .header__description {
+  margin: 0;
   font-size: 20px;
   line-height: 30px;
   position: relative;
-  top: 30px;
   max-width: 465px;
   z-index: 2;
 }
@@ -110,6 +110,7 @@
 }
 
 .staff__title {
+  margin: 0;
   text-align: center;
   font-size: 44px;
   line-height: 52px;
@@ -117,6 +118,7 @@
 }
 
 .staff__subtitle {
+  margin: 0;
   text-align: center;
   font-size: 20px;
   line-height: 30px;
@@ -178,7 +180,6 @@
   display: flex;
   align-items: start;
   box-sizing: border-box;
-  overflow-x: hidden;
   max-width: 100%;
 }
 
@@ -194,6 +195,7 @@
 }
 
 .events__title {
+  margin: 0;
   font-size: 44px;
   font-weight: 500;
   line-height: 52px;
@@ -215,9 +217,6 @@
   align-items: center;
   margin-bottom: 4px;
   font-weight: 500;
-  max-width: 24px;
-  height: 24px;
-  margin-right: 12px;
 }
 
 .event-info__icon {
@@ -227,6 +226,8 @@
   align-items: center;
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 24px;
+  height: 24px;
   margin-right: 12px;
 }
 
@@ -239,12 +240,13 @@
 }
 
 .event-info__text {
+  display: flex;
+  flex-direction: row;
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   margin: 0;
-  position: absolute;
-  left: 120px;
+  position: relative;
   z-index: 2;
 }
 
@@ -392,10 +394,11 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  z-index: -2;
+  z-index: 1;
 }
 
 .about__title {
+  margin: 0;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
@@ -411,15 +414,16 @@
   text-align: start;
   display: block;
   padding-left: 120px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .about__paragraph {
+  margin: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   column-gap: 32px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .about__circle {
@@ -430,7 +434,7 @@
   position: absolute;
   top: -121px;
   left: -91px;
-  z-index: -1;
+  z-index: 2;
 }
 
 .footer {
@@ -483,6 +487,7 @@
 }
 
 .footer__column-heading {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -500,9 +505,11 @@
 }
 
 .footer__social-icon {
+  margin-right: 10px;
 }
 
 .footer__copyrights {
+  margin: 0;
   display: block;
   flex-direction: column-reverse;
   justify-content: flex-start;

@@ -12,18 +12,28 @@
     <div class="page">
       <header class="header">
         <nav class="nav">
-          <img
-            src="./images/logo.png"
+            <img 
+            src="./images/logo.png" 
             alt="Practicum Library Logo"
-            class="logo"
-          />
-          <div class="nav-links">
-            <a class="nav__link" href="#staff-picks">Staff picks</a>
-            <a class="nav__link" href="#events">Events</a>
-            <a class="nav__link" href="#membership">Become a member</a>
-            <a class="nav__link" href="#about">About</a>
-            <a class="nav__link" href="#contacts">Contacts</a>
-          </div>
+            class="logo"/>
+           <ul class="nav-links">
+            </li>
+            <li>
+              <a class="nav__link" href="#staff-picks">Staff picks</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#events">Events</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#membership">Become a member</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#about">About</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
         </nav>
         <h1 class="header__title">Welcome to the Practicum Library</h1>
         <p class="header__description">
@@ -38,19 +48,19 @@
         />
         <div class="header__footer">
           <a class="header__link" href="#about">About the library &darr;</a>
-          <div class="header__address">
+          <p class="header__address">
             200 Success Avenue, The Town of Practicum
-          </div>
+          </p>
         </div>
       </header>
       <main class="content">
         <section class="staff">
           <h2 class="staff__title" id="staff-picks">Staff picks</h2>
-          <h3 class="staff__subtitle">That our readers love</h3>
+          <p class="staff__subtitle">That our readers love</p>
           <div class="staff__picks">
-            <div class="card">
+            <artical class="card">
               <div class="card__content">
-                <h4 class="card__title">Introduction to Algorithms</h4>
+                <h3 class="card__title">Introduction to Algorithms</h3>
                 <p class="card__text">
                   The name of this book is self-explanatory; it's a proper
                   introduction to algorithms! Introduction to Algorithms, or
@@ -63,7 +73,7 @@
                   Clifford Stein
                 </p>
               </div>
-            </div>
+            </artical>
             <div class="card">
               <div class="card__content">
                 <h4 class="card__title">
@@ -116,7 +126,6 @@
             </div>
           </div>
         </section>
-
         <section class="events">
           <div class="events__content">
             <h3 class="events__heading" id="events">Upcoming events:</h3>
@@ -125,23 +134,14 @@
             </h2>
             <div class="event-info events__info-section">
               <div class="event-info__item">
-                <img
-                  src="images/icon_calendar.svg"
-                  alt="Illustration of calendar"
-                />
                 <p class="event-info__text">Mon, January 12</p>
                 <div class="event-info__icon event-info__icon_calendar"></div>
               </div>
               <div class="event-info__item">
-                <div class="event-info__icon event-info__icon_pin">
-                  <img
-                    src="images/icon_pin.svg"
-                    alt="Illustration 0f loacation"
-                  />
-                </div>
                 <p class="event-info__text">
                   Practicum Library Conference Hall & Online
                 </p>
+                <div class="event-info__icon event-info__icon_pin"></div>
               </div>
             </div>
             <p class="events__description">
@@ -292,17 +292,22 @@
       <footer class="footer" id="contacts">
         <div class="footer__columns">
           <div class="footer__column">
-            <img class="footer__logo" src="images/logo_white.png" alt="Logo" />
+            <img
+              class="footer__logo"
+              id="Logo"
+              src="images/logo_white.png"
+              alt="Logo"
+            />
           </div>
           <div class="footer__column footer__column_hours">
-            <h1 class="footer__column-heading">Hours</h1>
+            <h2 class="footer__column-heading">Hours</h2>
             <ol class="footer__list">
               <li class="footer__list-item">Weekdays: 9am - 8pm</li>
               <li class="footer__list-item">Weekends: 10am - 6pm</li>
             </ol>
           </div>
           <div class="footer__column footer__column_social">
-            <h1 class="footer__column-heading">Social media</h1>
+            <h2 class="footer__column-heading">Social media</h2>
             <ul class="footer__list">
               <li class="footer__list-item">
                 <a class="footer__column-link" href="#">
