@@ -54,12 +54,11 @@
 }
 
 .header__title {
-  margin: 0;
+  margin: 150px 0 0;
   font-size: 66px;
   font-weight: 500;
   line-height: 76px;
   position: relative;
-  margin: 150px 0 0;
   max-width: 544px;
   z-index: 2;
 }
