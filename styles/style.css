@@ -29,6 +29,9 @@
 
 .nav-links {
   margin-top: 8px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -56,13 +59,13 @@
   font-weight: 500;
   line-height: 76px;
   position: relative;
-  margin-top: 130px;
+  margin: 150px 0 0;
   max-width: 544px;
   z-index: 2;
 }
 
 .header__description {
-  margin: 0;
+  margin: 32px 0 0;
   font-size: 20px;
   line-height: 30px;
   position: relative;
@@ -100,6 +103,7 @@
 }
 
 .header__address {
+  margin: 0;
   color: #838383;
 }
 
@@ -223,7 +227,7 @@
   align-items: center;
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 24px;
+  width: 24px;
   height: 24px;
   margin-right: 12px;
 }
@@ -401,6 +405,7 @@
   font-weight: 500;
   max-width: 154px;
   text-align: start;
+  z-index: 3;
 }
 
 .about__content {
@@ -409,7 +414,9 @@
   font-weight: 400;
   max-width: 660px;
   text-align: start;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   padding-left: 120px;
   z-index: 3;
 }
@@ -417,9 +424,8 @@
 .about__paragraph {
   margin: 0;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   justify-content: center;
-  column-gap: 32px;
   z-index: 3;
 }
 
